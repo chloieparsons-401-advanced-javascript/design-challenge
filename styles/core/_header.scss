@@ -1,0 +1,29 @@
+//parallax scrolling; source: https://codepen.io/webmadewell/pen/zppMBX
+
+body{
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: blueviolet; //get sunrise photo maybe instead
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;  
+  bottom: 0;
+  left: 0;
+  background-color: midnightblue;
+  opacity: 0.3;
+}
+
+//Possibly more code
