@@ -1,0 +1,26 @@
+//Source: https://web-design-weekly.com/2013/05/12/handy-sass-mixins/
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* keeps bg color inside the border: */
+}
+
+@mixin flex() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin borderBoxShadow() {
+  box-shadow: 5px, 3px, 3px, gray;
+}
